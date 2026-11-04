@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/06/26||20:48:53" using="Simscape Multibody Link Version 7.4" from="SolidWorks 31.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="LCLProject" uid="LCLProject" version="113">
+<AssemblyFile name="LCLProject.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base-1" uid="base-1" grounded="true" entityUid="base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.023151368393428129 0.0059713251752123095 0.008159831366640502</Translation>
+</Transform>
+</Instance>
+<Instance name="arm1-1" uid="arm1-1" entityUid="arm1*:*Default">
+<Transform>
+<Rotation>-0.54139093139122429 0 0.84077099105960051 -1.1760231761705506e-16 -1 0 0.84077099105960051 -1.1737359874835884e-16 0.54139093139122429</Rotation>
+<Translation>-0.18556864781079752 0.14597132517521227 0.030391128684522466</Translation>
+</Transform>
+</Instance>
+<Instance name="arm2-1" uid="arm2-1" entityUid="arm2*:*Default">
+<Transform>
+<Rotation>0.84909953435470487 0 -0.5282328849651674 0 1 0 0.5282328849651674 0 0.84909953435470487</Rotation>
+<Translation>-0.015748740939854913 0.11597132517521228 0.1360377056775573</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0.125 -0.23000000000000009</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm1-1</Uid>
+</InstancePath>
+<Position>-0.30000000000000004 0.029999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0.12 -0.23000000000000009</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>arm1-1</Uid>
+</InstancePath>
+<Position>-0.30000000000000004 0.01999999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm1-1</Uid>
+</InstancePath>
+<Position>0 0.029999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm2-1</Uid>
+</InstancePath>
+<Position>-0.20000000000000007 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>arm1-1</Uid>
+</InstancePath>
+<Position>-0.30000000000000004 0.0099999999999999811 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>arm2-1</Uid>
+</InstancePath>
+<Position>-0.20000000000000007 0.01999999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="arm1" uid="arm1*:*Default" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="arm1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.34116149328737377</Mass>
+<CenterOfMass>-0.15966894667532325 0.0080682531686753177 0</CenterOfMass>
+<Inertia>0.00017759469582497581 0.0049517241093445918 0.00479358360835558 0 0 2.2865561167925698e-05</Inertia>
+</MassProperties>
+<GeometryFile name="arm1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="arm2" uid="arm2*:*Default" version="137">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="arm2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.24482300164692439</Mass>
+<CenterOfMass>-0.10128320976070725 0.0043583951196463815 0</CenterOfMass>
+<Inertia>0.00013667428643249251 0.0017054898577824305 0.0016031678373326784 0 0 5.9891826536068713e-05</Inertia>
+</MassProperties>
+<GeometryFile name="arm2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base" uid="base*:*Default" version="178">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>7.2007917883786199</Mass>
+<CenterOfMass>0 0.013306523843890345 -0.032876729553004136</CenterOfMass>
+<Inertia>0.41043539466897483 0.76180812554989641 0.36130830103259937 0.015593195936723658 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="0" b="0" a="1"/>
+<Diffuse r="0" g="0" b="0" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
